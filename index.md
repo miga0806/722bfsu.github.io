@@ -1,37 +1,98 @@
-## Welcome to GitHub Pages
+# Final Cut Pro
 
-You can use the [editor on GitHub](https://github.com/miga0806/722bfsu.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+[TOC]
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 简介
 
-### Markdown
+Final Cut Pro 是苹果公司开发的一款专业视频非线性编辑软件，Final Cut Pro X 是最新版本包含进行后期制作所需的一切功能。导入并组织媒体、编辑、添加效果、改善音效、颜色分级以及交付 — 所有操作都可以在该应用程序中完成。Final Cut Pro 在美国专业专业剪辑市场中的占有率为49%，随着它的广泛普及，越来越多的影片选此软件来参与后期制作剪辑的工作，其中就有荣获奥斯卡最佳剪辑的影片《社交网络》、《龙纹身的女孩》等众多优秀的电影作品。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![01](../16-米佳/images/01.png)
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### 页面布局 
+Final Cut Pro 界面一共由四部分组成，分别为事件库、监视器、检查器以及时间线。
 
-**Bold** and _Italic_ and `Code` text
+![02](../16-米佳/images/02.png)
 
-[Link](url) and ![Image](src)
-```
+最左上边一栏为事件库，是用来导入、组织、预览所有素材的地方，通过新建事件为素材分类；中间为监视器，用来快速预览事件及时间轴的素材播放器，只需在选定的素材上拖动鼠标即可快速预览；右上部分为检查器，用来查看所选项目的基本信息，可以对项目进行一些基本操作；最下方的区域为时间线，用于显示排列的片段及分层的视频音频的窗口，将视频拖入轨道即可剪辑。
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 基本快捷键
 
-### Jekyll Themes
+| **command +S** |       **保存项目**       | **shift +O** | **移动播放头到出点位置** |
+| :------------: | :----------------------: | :----------: | :----------------------: |
+| **command +O** |       **打开项目**       |    **B**     |         **切割**         |
+| **command +A** |  **启动序列中所有片段**  |  **Ctrl+L**  |     **启动循环播放**     |
+|     **Z**      |         **缩放**         | **shift+T**  |       **切换轨道**       |
+|     **A**      |         **选择**         | **shift+K**  |   **向前移动到下一帧**   |
+|    **K+L**     |    **慢动作向前播放**    | **option+k** |   **向后移动到下一帧**   |
+|    **K+J**     |    **慢动作向后播放**    |    **H**     |         **拖动**         |
+|  **shift +I**  | **移动播放头到入点位置** |    **R**     |       **范围选择**       |
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/miga0806/722bfsu.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 主要特色
 
-### Support or Contact
+### **磁性时间线**
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Final Cut Pro 中的磁性时间线拥有简洁的界面和强大的专业性工具，而且仅在你需要时才呈现出来，令剪辑变得极其流畅、灵活。多条片段可如磁铁般吸合在一起，时间线内多余的黑色间隙也随之消失，让组合镜头变得轻而易举。同样，片段能够自动让位，以避免片段冲突和同步问题，让你能专注于故事创作。如果你更喜欢使用传统的非波纹式剪辑行为，可以采用位置工具来构建时间线。
+
+### **多声道音频剪辑**
+
+可轻松启用或禁用整个音轨，还能选择特定区域，对定时和音量进行精细调控。如需全面查看音频文件，只需进入检查器，并在其中重命名并隐藏单个音轨。如果你正在处理多机位片段，只需点击一下，即可切换及合并多个音频源。
+
+### **多机位剪辑**
+
+借助 Final Cut Pro，你能以前所未有的速度和灵活性，将复杂的多机位项目组合起来。64 位引擎可让你原生地、实时地处理多种格式、帧尺寸和帧频。通过自动同步多达 64 个角度的视频和照片，你可轻松创建多机位片段，也可选择自定义同步选项，按照时间日期、时间码、标记或音频波形图来精确对齐素材。
+
+### **内联精确度编辑器**
+
+磁性时间线改进了传统的修剪方式，包括波纹、滚动、滑动和滑行剪辑等。如果你需要更多操控，可以双击一个片段，打开精确度编辑器，直接在时间线中进行修剪。精确度编辑器可以放大剪辑点，因此你可以看见片段里使用过的和未使用过的部分。然后浏览一下整个片段，点击一下，即可调整剪辑点。
+
+
+
+## 主要功能
+
+###     视频裁剪
+
+* 导入媒体进行编辑：选择一个片段，将其拖入下方的时间线即可；
+
+* 快捷键剪辑：使用快捷键A选择片段、移动片段、调整片段长度、切割片段、缩放片段等；
+
+  ![03](../16-米佳/images/03.png)
+
+* 覆盖时间线：将前面的一部分片段替换掉但是又不想让它影响后面的片段的时间点位置。如果用单个片段(片段A)覆盖掉主故事线上的单个片段(片段B)，直接将片段A拖到片段B，然后点击【替换】、【从开头替换】、【从结尾替换】；
+
+* 音频分离：选中片段，如图分离音频，最后单独选中分离出来的音频点击键盘上的【delete】 ；
+
+  ![04](../16-米佳/images/04.png)
+
+  ### 添加字幕
+
+  在特效窗口中选择“ 标题浏览器，将特定的“标题”(或称字幕)拖入故事线的视频片段上方和该片段建立连接。如果有其他片段在字幕之上，那么字幕会被覆盖，所以请确保字幕总在最上层。字幕从字幕框最左边开始，到最右边结束，这个时间长度可以在字幕框框边沿拖动改变长度。
+
+  ![05](../16-米佳/images/05.png)
+
+  有多种字幕款式可供选择，在特效窗口中选择“ 标题浏览器即可；
+
+  ![06](../16-米佳/images/06.png)
+
+###       添加转场特效
+
+两个片段在某些时候没有一个过渡效果会略显违和感，转场效果就是一种过渡效果，让视频衔接得更好。添       加转场非常简单，只要在效果窗口切换到【转场浏览器】标签，然后将一个转场拖到两个片段中间 即可，后期调整转场的长度或者显示精准度可在编辑器微调；
+
+![07](../16-米佳/images/07.png)
+
+###   添加视频效果
+
+在特效窗口选择”效果浏览器“，然后选中一个效果，将其拖到主故事线上的视频片段中完成添加。 
+
+![08](../16-米佳/images/08.png)
+
+## 技术规格
+
+* 配备 Intel Core 2 Duo 或更高版本处理器的 Mac 电脑
+* 2GB RAM (推荐使用 4GB RAM)
+* 支持 OpenCL 的图形卡或 Intel HD Graphics 3000 或更新版本
+* 256MB 的 VRAM 1280 x 768 或更高分辨率的显示器、Mac OS X v10.6.7 或更高版本
+  ProKit 7.0 或更高版本
+* 2.4GB 的磁盘空间
