@@ -1,0 +1,526 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Final Cut Pro X</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:///Users/danfenfenrifaner/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:///Users/danfenfenrifaner/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:///Users/danfenfenrifaner/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:///Users/danfenfenrifaner/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff');
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///Users/danfenfenrifaner/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 4px 2px 4px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac first-line-indent'><h1><a name='header-n0' class='md-header-anchor '></a>Final Cut Pro</h1><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#header-n0">Final Cut Pro</a></span><span class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" href="#header-n3">简介</a></span><span class="md-toc-item md-toc-h3" data-ref="n8"><a class="md-toc-inner" href="#header-n8">页面布局 </a></span><span class="md-toc-item md-toc-h3" data-ref="n12"><a class="md-toc-inner" href="#header-n12">基本快捷键</a></span><span class="md-toc-item md-toc-h2" data-ref="n54"><a class="md-toc-inner" href="#header-n54">主要特色</a></span><span class="md-toc-item md-toc-h3" data-ref="n55"><a class="md-toc-inner" href="#header-n55"><strong>磁性时间线</strong></a></span><span class="md-toc-item md-toc-h3" data-ref="n57"><a class="md-toc-inner" href="#header-n57"><strong>多声道音频剪辑</strong></a></span><span class="md-toc-item md-toc-h3" data-ref="n59"><a class="md-toc-inner" href="#header-n59"><strong>多机位剪辑</strong></a></span><span class="md-toc-item md-toc-h3" data-ref="n61"><a class="md-toc-inner" href="#header-n61"><strong>内联精确度编辑器</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n64"><a class="md-toc-inner" href="#header-n64">主要功能</a></span><span class="md-toc-item md-toc-h3" data-ref="n65"><a class="md-toc-inner" href="#header-n65">视频裁剪</a></span><span class="md-toc-item md-toc-h3" data-ref="n82"><a class="md-toc-inner" href="#header-n82">添加转场特效</a></span><span class="md-toc-item md-toc-h3" data-ref="n85"><a class="md-toc-inner" href="#header-n85">添加视频效果</a></span><span class="md-toc-item md-toc-h2" data-ref="n88"><a class="md-toc-inner" href="#header-n88">技术规格</a></span></p></div><h2><a name='header-n3' class='md-header-anchor '></a>简介</h2><p>Final Cut Pro 是苹果公司开发的一款专业视频非线性编辑软件，Final Cut Pro X 是最新版本包含进行后期制作所需的一切功能。导入并组织媒体、编辑、添加效果、改善音效、颜色分级以及交付 — 所有操作都可以在该应用程序中完成。Final Cut Pro 在美国专业专业剪辑市场中的占有率为49%，随着它的广泛普及，越来越多的影片选此软件来参与后期制作剪辑的工作，其中就有荣获奥斯卡最佳剪辑的影片《社交网络》、《龙纹身的女孩》等众多优秀的电影作品。</p><p><img src='../16-米佳/images/01.png' alt='01' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><h3><a name='header-n8' class='md-header-anchor '></a>页面布局 </h3><p>Final Cut Pro 界面一共由四部分组成，分别为事件库、监视器、检查器以及时间线。</p><p><img src='../16-米佳/images/02.png' alt='02' referrerPolicy='no-referrer' /></p><p>最左上边一栏为事件库，是用来导入、组织、预览所有素材的地方，通过新建事件为素材分类；中间为监视器，用来快速预览事件及时间轴的素材播放器，只需在选定的素材上拖动鼠标即可快速预览；右上部分为检查器，用来查看所选项目的基本信息，可以对项目进行一些基本操作；最下方的区域为时间线，用于显示排列的片段及分层的视频音频的窗口，将视频拖入轨道即可剪辑。</p><h3><a name='header-n12' class='md-header-anchor '></a>基本快捷键</h3><figure><table><thead><tr><th style='text-align:center;' ><strong>command +S</strong></th><th style='text-align:center;' ><strong>保存项目</strong></th><th style='text-align:center;' ><strong>shift +O</strong></th><th style='text-align:center;' ><strong>移动播放头到出点位置</strong></th></tr></thead><tbody><tr><td style='text-align:center;' ><strong>command +O</strong></td><td style='text-align:center;' ><strong>打开项目</strong></td><td style='text-align:center;' ><strong>B</strong></td><td style='text-align:center;' ><strong>切割</strong></td></tr><tr><td style='text-align:center;' ><strong>command +A</strong></td><td style='text-align:center;' ><strong>启动序列中所有片段</strong></td><td style='text-align:center;' ><strong>Ctrl+L</strong></td><td style='text-align:center;' ><strong>启动循环播放</strong></td></tr><tr><td style='text-align:center;' ><strong>Z</strong></td><td style='text-align:center;' ><strong>缩放</strong></td><td style='text-align:center;' ><strong>shift+T</strong></td><td style='text-align:center;' ><strong>切换轨道</strong></td></tr><tr><td style='text-align:center;' ><strong>A</strong></td><td style='text-align:center;' ><strong>选择</strong></td><td style='text-align:center;' ><strong>shift+K</strong></td><td style='text-align:center;' ><strong>向前移动到下一帧</strong></td></tr><tr><td style='text-align:center;' ><strong>K+L</strong></td><td style='text-align:center;' ><strong>慢动作向前播放</strong></td><td style='text-align:center;' ><strong>option+k</strong></td><td style='text-align:center;' ><strong>向后移动到下一帧</strong></td></tr><tr><td style='text-align:center;' ><strong>K+J</strong></td><td style='text-align:center;' ><strong>慢动作向后播放</strong></td><td style='text-align:center;' ><strong>H</strong></td><td style='text-align:center;' ><strong>拖动</strong></td></tr><tr><td style='text-align:center;' ><strong>shift +I</strong></td><td style='text-align:center;' ><strong>移动播放头到入点位置</strong></td><td style='text-align:center;' ><strong>R</strong></td><td style='text-align:center;' ><strong>范围选择</strong></td></tr></tbody></table></figure><h2><a name='header-n54' class='md-header-anchor '></a>主要特色</h2><h3><a name='header-n55' class='md-header-anchor '></a><strong>磁性时间线</strong></h3><p>Final Cut Pro 中的磁性时间线拥有简洁的界面和强大的专业性工具，而且仅在你需要时才呈现出来，令剪辑变得极其流畅、灵活。多条片段可如磁铁般吸合在一起，时间线内多余的黑色间隙也随之消失，让组合镜头变得轻而易举。同样，片段能够自动让位，以避免片段冲突和同步问题，让你能专注于故事创作。如果你更喜欢使用传统的非波纹式剪辑行为，可以采用位置工具来构建时间线。</p><h3><a name='header-n57' class='md-header-anchor '></a><strong>多声道音频剪辑</strong></h3><p>可轻松启用或禁用整个音轨，还能选择特定区域，对定时和音量进行精细调控。如需全面查看音频文件，只需进入检查器，并在其中重命名并隐藏单个音轨。如果你正在处理多机位片段，只需点击一下，即可切换及合并多个音频源。</p><h3><a name='header-n59' class='md-header-anchor '></a><strong>多机位剪辑</strong></h3><p>借助 Final Cut Pro，你能以前所未有的速度和灵活性，将复杂的多机位项目组合起来。64 位引擎可让你原生地、实时地处理多种格式、帧尺寸和帧频。通过自动同步多达 64 个角度的视频和照片，你可轻松创建多机位片段，也可选择自定义同步选项，按照时间日期、时间码、标记或音频波形图来精确对齐素材。</p><h3><a name='header-n61' class='md-header-anchor '></a><strong>内联精确度编辑器</strong></h3><p>磁性时间线改进了传统的修剪方式，包括波纹、滚动、滑动和滑行剪辑等。如果你需要更多操控，可以双击一个片段，打开精确度编辑器，直接在时间线中进行修剪。精确度编辑器可以放大剪辑点，因此你可以看见片段里使用过的和未使用过的部分。然后浏览一下整个片段，点击一下，即可调整剪辑点。</p><p>&nbsp;</p><h2><a name='header-n64' class='md-header-anchor '></a>主要功能</h2><h3><a name='header-n65' class='md-header-anchor '></a>视频裁剪</h3><ul><li><p>导入媒体进行编辑：选择一个片段，将其拖入下方的时间线即可；</p></li><li><p>快捷键剪辑：使用快捷键A选择片段、移动片段、调整片段长度、切割片段、缩放片段等；</p><p><img src='../16-米佳/images/03.png' alt='03' referrerPolicy='no-referrer' /></p></li><li><p>覆盖时间线：将前面的一部分片段替换掉但是又不想让它影响后面的片段的时间点位置。如果用单个片段(片段A)覆盖掉主故事线上的单个片段(片段B)，直接将片段A拖到片段B，然后点击【替换】、【从开头替换】、【从结尾替换】；</p></li><li><p>音频分离：选中片段，如图分离音频，最后单独选中分离出来的音频点击键盘上的【delete】 ；</p><p><img src='../16-米佳/images/04.png' alt='04' referrerPolicy='no-referrer' /></p><h3><a name='header-n77' class='md-header-anchor '></a>添加字幕</h3><p>在特效窗口中选择“ 标题浏览器，将特定的“标题”(或称字幕)拖入故事线的视频片段上方和该片段建立连接。如果有其他片段在字幕之上，那么字幕会被覆盖，所以请确保字幕总在最上层。字幕从字幕框最左边开始，到最右边结束，这个时间长度可以在字幕框框边沿拖动改变长度。</p><p><img src='../16-米佳/images/05.png' alt='05' referrerPolicy='no-referrer' /></p><p>有多种字幕款式可供选择，在特效窗口中选择“ 标题浏览器即可；</p><p><img src='../16-米佳/images/06.png' alt='06' referrerPolicy='no-referrer' /></p></li></ul><h3><a name='header-n82' class='md-header-anchor '></a>添加转场特效</h3><p>两个片段在某些时候没有一个过渡效果会略显违和感，转场效果就是一种过渡效果，让视频衔接得更好。添       加转场非常简单，只要在效果窗口切换到【转场浏览器】标签，然后将一个转场拖到两个片段中间 即可，后期调整转场的长度或者显示精准度可在编辑器微调；</p><p><img src='../16-米佳/images/07.png' alt='07' referrerPolicy='no-referrer' /></p><h3><a name='header-n85' class='md-header-anchor '></a>添加视频效果</h3><p>在特效窗口选择”效果浏览器“，然后选中一个效果，将其拖到主故事线上的视频片段中完成添加。 </p><p><img src='../16-米佳/images/08.png' alt='08' referrerPolicy='no-referrer' /></p><h2><a name='header-n88' class='md-header-anchor '></a>技术规格</h2><ul><li>配备 Intel Core 2 Duo 或更高版本处理器的 Mac 电脑</li><li>2GB RAM (推荐使用 4GB RAM)</li><li>支持 OpenCL 的图形卡或 Intel HD Graphics 3000 或更新版本</li><li>256MB 的 VRAM 1280 x 768 或更高分辨率的显示器、Mac OS X v10.6.7 或更高版本
+ProKit 7.0 或更高版本</li><li>2.4GB 的磁盘空间</li></ul></div>
+</body>
+</html>
